@@ -1,9 +1,11 @@
 import { Hero } from "./hero";
+import { Services } from "./services";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="">
       <Hero />
+      <Services />
     </div>
   );
 }
