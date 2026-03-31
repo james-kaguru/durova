@@ -1,0 +1,35 @@
+import { TypographyH1 } from "@/components/typography";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, ShieldAlert } from "lucide-react";
+import Image from 'next/image'
+export function Hero() {
+  return (
+    <section className="flex flex-row h-[100vh]">
+      <div className="w-1/2 flex flex-col justify-center px-12">
+        <div className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-3 py-1 text-sm font-medium mb-8 w-fit">
+          <ShieldAlert className="size-4" />
+          <span>Next-Gen Flood Protection</span>
+        </div>
+        <TypographyH1 className="max-w-[900px] text-left  text-4xl md:text-6xl lg:text-5xl mb-2">
+          Technology Driven Flood Detection and Coordination
+        </TypographyH1>
+        <p className="text-muted-foreground text-base mb-8 max-w-[700px]">
+          Empowering communities in Kenya with real-time alerting and advanced coordination technology to mitigate the impact of flood disasters.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Button size="lg" className="w-[200px]">
+            Explore Solution
+            <ArrowRight className="ml-2 size-4" />
+          </Button>
+          <Button variant="outline" size="lg" className="w-[200px]">
+            Learn More
+          </Button>
+        </div>
+      </div>
+
+      <div className="w-1/2 h-full">
+        <Image src={"https://dev-shrift.s3.eu-central-1.amazonaws.com/thijs-Iz8gKvHINhk-unsplash.jpg"} width={500} height={100} className="w-full h-full object-center object-cover" alt="water dam" />
+      </div>
+    </section>
+  );
+}
