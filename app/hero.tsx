@@ -4,8 +4,8 @@ import { ArrowRight, ShieldAlert } from "lucide-react";
 import Image from 'next/image'
 export function Hero() {
   return (
-    <section className="flex lg:flex-row flex-col lg:h-[100vh] border-b">
-      <div className="lg:w-1/2 flex flex-col items-center lg:items-start justify-center p-6 lg:p-12">
+    <section className="custom-container flex lg:flex-row flex-col border-b gap-12 py-6 lg:py-12">
+      <div className="lg:w-1/2 flex flex-col items-center lg:items-start justify-center">
         <div className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-3 py-1 text-sm font-medium mb-8 w-fit">
           <ShieldAlert className="size-4" />
           <span>Next-Gen Flood Protection</span>
@@ -27,8 +27,8 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="h-[400px] lg:w-1/2 lg:h-full">
-        <Image src={"https://dev-shrift.s3.eu-central-1.amazonaws.com/thijs-Iz8gKvHINhk-unsplash.jpg"} width={500} height={500} className="w-full h-full object-center object-cover" alt="water dam" />
+      <div className="lg:w-1/2">
+        <Image src={"https://dev-shrift.s3.eu-central-1.amazonaws.com/thijs-Iz8gKvHINhk-unsplash.jpg"} width={500} height={500} className="w-full h-[400px] lg:h-[750px] object-center object-cover" alt="water dam" />
       </div>
     </section>
   );
