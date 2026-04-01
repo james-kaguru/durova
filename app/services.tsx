@@ -28,7 +28,7 @@ export function Services() {
   ];
 
   return (
-    <section id="services" className="py-12 border-b bg-muted/30 border-t">
+    <section id="services" className="py-12 border-b">
       <div className="custom-container">
         <div className="text-center mb-8">
           <TypographyH2 className="text-primary">Our Technology</TypographyH2>
@@ -40,10 +40,10 @@ export function Services() {
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
             <div key={service.title} className="border bg-background transition-shadow hover:shadow-lg">
-              <div className='border-b'>
+              <div className='border-b bg-muted/80'>
                 <Image src={service.image} width={400} height={400} alt="" unoptimized={true} className="h-[400px] w-full object-center object-contain" />
               </div>
-              <div className="p-6">
+              <div className="p-6 bg-background">
                 <p className="text-lg font-semibold tracking-tight mb-3 text-primary">{service.title}</p>
                 <p className="leading-7 text-justify text-muted-foreground">{service.description}</p>
               </div>

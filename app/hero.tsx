@@ -4,7 +4,7 @@ import { ArrowRight, ShieldAlert } from "lucide-react";
 import Image from 'next/image'
 export function Hero() {
   return (
-    <section className="flex lg:flex-row flex-col lg:h-[100vh]">
+    <section className="flex lg:flex-row flex-col lg:h-[100vh] border-b">
       <div className="lg:w-1/2 flex flex-col items-center lg:items-start justify-center p-6 lg:p-12">
         <div className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-3 py-1 text-sm font-medium mb-8 w-fit">
           <ShieldAlert className="size-4" />
