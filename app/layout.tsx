@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { DM_Mono, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
-const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-sans' });
+// const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-sans' });
+const dmMono = DM_Mono({ subsets: ['latin'], weight: '400' });
 
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", "font-sans", dmSans.variable)}
+      className={cn("h-full", "antialiased", "font-sans", dmMono.className)}
     >
       <body className="min-h-full flex flex-col">
         <TooltipProvider>
