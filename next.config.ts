@@ -16,9 +16,9 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
-    ]
-  }
-
+    ],
+  },
+  allowedDevOrigins: ['192.168.100.5'],
 };
 
 export default nextConfig;
