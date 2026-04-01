@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { DM_Mono, DM_Sans } from "next/font/google";
+import { DM_Mono, DM_Sans, Space_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Navbar } from "./navbar";
 
-// const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-sans' });
-const dmMono = DM_Mono({ subsets: ["latin"], weight: "400" });
+// const dmMono = DM_Mono({ subsets: ["latin"], weight: "400" });
+const spaceMono = Space_Mono({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", "font-sans", dmMono.className)}
+      className={cn("h-full", "antialiased", "font-sans", spaceMono.className)}
     >
       <body className="min-h-full flex flex-col">
         <TooltipProvider>

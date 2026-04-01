@@ -1,7 +1,7 @@
 import { TypographyH2, TypographyP } from "@/components/typography";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import Image from 'next/image'
+import Image from "next/image";
 import Link from "next/link";
 
 export function About() {
@@ -9,32 +9,60 @@ export function About() {
     <section id="about" className="py-12 border-b bg-muted/80">
       <div className="custom-container">
         <div className="lg:flex lg:flex-row gap-12 mb-12">
-          <TypographyH2 className="lg:w-1/2 text-nowrap text-primary">
+          <TypographyH2 className="lg:w-1/2 text-nowrap text-primary uppercase">
             Born from Resilience
           </TypographyH2>
 
           <div className="items-center lg:w-1/2">
             <TypographyP className="text-justify">
-              Durova was founded following the devastating flood disasters that recently impacted communities across Kenya. Witnessing the challenges in detection and response, our team came together with a singular purpose: to leverage technology for human safety.
+              Durova was founded following the devastating flood disasters that
+              recently impacted communities across Kenya. Witnessing the
+              challenges in detection and response, our team came together with
+              a singular purpose: to leverage technology for human safety.
             </TypographyP>
           </div>
         </div>
 
         <div className="grid sm:grid-cols-3 border-t border-b border-l *:border-r bg-background">
           {[
-            { name: "James Kaguru", role: "Co-Founder", image: "https://durova.s3.eu-central-1.amazonaws.com/web-assets/dam.jpg" },
-            { name: "Kevin Tuei", role: "Co-Founder", image: "https://durova.s3.eu-central-1.amazonaws.com/web-assets/dam.jpg" },
-            { name: "Patrick Nyangoto", role: "Co-Founder", image: "https://durova.s3.eu-central-1.amazonaws.com/web-assets/dam.jpg" },
+            {
+              name: "James Kaguru",
+              role: "Co-Founder",
+              image:
+                "https://durova.s3.eu-central-1.amazonaws.com/web-assets/dam.jpg",
+            },
+            {
+              name: "Kevin Tuei",
+              role: "Co-Founder",
+              image:
+                "https://durova.s3.eu-central-1.amazonaws.com/web-assets/dam.jpg",
+            },
+            {
+              name: "Patrick Nyangoto",
+              role: "Co-Founder",
+              image:
+                "https://durova.s3.eu-central-1.amazonaws.com/web-assets/dam.jpg",
+            },
           ].map((member) => (
-            <div key={member.name} className="flex flex-col items-center text-center ">
+            <div
+              key={member.name}
+              className="flex flex-col items-center text-center "
+            >
               <div className="w-full h-[350px]">
-                <Image src={member.image} width={350} height={350} alt={member.name} className="obect-cover object-center w-full h-full" />
+                <Image
+                  src={member.image}
+                  width={350}
+                  height={350}
+                  alt={member.name}
+                  className="obect-cover object-center w-full h-full"
+                />
               </div>
               <div className="p-6">
-                <h3 className="font-heading font-bold text-lg text-primary tracking-tight">{member.name}</h3>
+                <h3 className="font-heading font-bold text-lg text-primary tracking-tight uppercase">
+                  {member.name}
+                </h3>
                 <p className="text-sm text-muted-foreground">{member.role}</p>
               </div>
-
             </div>
           ))}
         </div>
