@@ -1,12 +1,15 @@
 import RichText from "@/components/RichText";
-import payload from "@/lib/payload";
+import configPromise from "@payload-config";
+
 import Image from "next/image";
+import { getPayload } from "payload";
 
 export default async function Page({
   params,
   searchParams,
 }: PageProps<"/blogs/[blogId]">) {
   const { blogId } = await params;
+  const payload = await getPayload({ config: configPromise });
 
   const blog = await payload.findByID({
     collection: "blogs",
@@ -25,7 +28,9 @@ export default async function Page({
         />
         <div className="absolute w-full bottom-0">
           <div className="text-white custom-container py-3">
-            <h1>{blog.title}</h1>
+            <h1 className="text-6xl tracking-tight font-semibold">
+              {blog.title}
+            </h1>
           </div>
         </div>
       </div>
