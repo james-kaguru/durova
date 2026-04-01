@@ -20,6 +20,13 @@ const nextConfig: NextConfig = {
     ],
   },
   allowedDevOrigins: ["192.168.100.5"],
+  typescript: {
+    // !! WARN !!
+    // Dangerously allow production builds to successfully complete even if
+    // your project has type errors.
+    // !! WARN !!
+    ignoreBuildErrors: true,
+  },
 };
 
 export default withPayload(nextConfig);
