@@ -16,7 +16,7 @@ import {
 function SmNavSheet() {
   return (
     <Sheet>
-      <SheetTrigger>
+      <SheetTrigger className="lg:hidden">
         <Menu strokeWidth={1} />
       </SheetTrigger>
       <SheetContent side='left' >
@@ -42,7 +42,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="custom-container flex h-16 items-center justify-between">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 ">
           <SmNavSheet />
           <Link href="/" className="flex items-center space-x-2 text-primary tracking-tight font-semibold">
             <span className=" text-xl tracking-tight">Durova</span>
