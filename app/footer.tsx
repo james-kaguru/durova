@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="py-12 bg-black text-white/60">
-      <div className="custom-container space-y-6">
-        <div className="lg:grid lg:grid-cols-3 gap-3 space-y-6 lg:space-y-0">
-          <div className="space-y-4 lg:text-center">
+    <footer className="py-12 bg-black text-white/60 ">
+      <div className="custom-container space-y-12">
+        <div className="lg:grid lg:grid-cols-3 gap-6 space-y-6 lg:space-y-0">
+          <div className="space-y-4">
             <Link href="/" className="text-xl font-semiold mb-2 tracking-tight text-white">
               Durova
             </Link>
@@ -31,7 +31,7 @@ export function Footer() {
         </div>
 
 
-        <div className="text-sm text-center py-3 text-white">
+        <div className="text-sm text-center text-white">
           © {new Date().getFullYear()} Durova. All rights reserved.
         </div>
       </div>
