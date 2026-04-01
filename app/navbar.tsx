@@ -45,7 +45,7 @@ export function Navbar() {
         <div className="flex items-center gap-3 ">
           <SmNavSheet />
           <Link href="/" className="flex items-center space-x-2 text-primary tracking-tight font-semibold">
-            <span className=" text-xl tracking-tight">Durova</span>
+            <span className=" text-2xl tracking-tight">Durova</span>
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
