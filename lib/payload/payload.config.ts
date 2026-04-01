@@ -4,29 +4,13 @@ import path from "path";
 import { buildConfig } from "payload";
 import { fileURLToPath } from "url";
 import sharp from "sharp";
-// import { Users } from "./collections/Users";
-// import { Media } from "./collections/Media";
-// import { defaultLexical } from "./fields/defaultLexical";
+import { Users } from "./collections/Users";
+import { Media } from "./collections/Media";
+import { defaultLexical } from "./fields/defaultLexical";
 import { s3Storage } from "@payloadcms/storage-s3";
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
-
-const Users = {
-  slug: "users",
-  admin: {
-    defaultColumns: ["name", "email"],
-    useAsTitle: "email",
-  },
-  auth: true,
-  fields: [
-    {
-      name: "name",
-      type: "text",
-    },
-  ],
-  timestamps: true,
-};
 
 export default buildConfig({
   admin: {
@@ -35,8 +19,8 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users],
-  // editor: defaultLexical,
+  collections: [Users, Media],
+  editor: defaultLexical,
   secret: process.env.PAYLOAD_SECRET || "",
   typescript: {
     outputFile: path.resolve(dirname, "payload-types.ts"),
