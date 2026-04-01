@@ -8,12 +8,12 @@ export function About() {
   return (
     <section id="about" className="py-12 border-b bg-muted/80">
       <div className="custom-container">
-        <div className="flex flex-row gap-12 mb-12">
-          <TypographyH2 className="w-1/2 text-nowrap text-primary">
+        <div className="lg:flex lg:flex-row gap-12 mb-12">
+          <TypographyH2 className="lg:w-1/2 text-nowrap text-primary">
             Born from Resilience
           </TypographyH2>
 
-          <div className="items-center w-1/2">
+          <div className="items-center lg:w-1/2">
             <TypographyP className="text-justify">
               Durova was founded following the devastating flood disasters that recently impacted communities across Kenya. Witnessing the challenges in detection and response, our team came together with a singular purpose: to leverage technology for human safety.
             </TypographyP>
