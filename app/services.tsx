@@ -10,20 +10,20 @@ export function Services() {
       title: "Advanced Flood Detection",
       description: "Utilizing IoT sensors and AI-driven predictive modeling to monitor water levels and detect potential flood risks with high accuracy.",
       icon: Radio,
-      image: "https://dev-shrift.s3.eu-central-1.amazonaws.com/thijs-Iz8gKvHINhk-unsplash.jpg"
+      image: "https://durova.s3.eu-central-1.amazonaws.com/web-assets/flood-detection.svg"
     },
     {
       title: "Real-time Community Alerts",
       description: "A robust alerting system that delivers instantaneous notifications via SMS, app, and local siren networks to ensure everyone is informed.",
       icon: Bell,
-      image: "https://dev-shrift.s3.eu-central-1.amazonaws.com/thijs-Iz8gKvHINhk-unsplash.jpg"
+      image: "https://durova.s3.eu-central-1.amazonaws.com/web-assets/realtime-alerts.svg"
 
     },
     {
       title: "Emergency Coordination",
       description: "A centralized platform for rescue teams and community leaders to coordinate response efforts, resource allocation, and evacuation paths.",
       icon: MapPin,
-      image: "https://dev-shrift.s3.eu-central-1.amazonaws.com/thijs-Iz8gKvHINhk-unsplash.jpg"
+      image: "https://durova.s3.eu-central-1.amazonaws.com/web-assets/project-management.svg"
     },
   ];
 
@@ -40,8 +40,8 @@ export function Services() {
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
             <div key={service.title} className="border bg-background transition-shadow hover:shadow-lg">
-              <div>
-                <Image src={service.image} width={400} height={400} alt="" className="h-[400px] w-full object-center object-cover" />
+              <div className='border-b'>
+                <Image src={service.image} width={400} height={400} alt="" unoptimized={true} className="h-[400px] w-full object-center object-contain" />
               </div>
               <div className="p-6">
                 <p className="text-lg font-semibold tracking-tight mb-3 text-primary">{service.title}</p>
