@@ -10,9 +10,9 @@ export function Hero() {
           <ShieldAlert className="size-4" />
           <span>Next-Gen Flood Protection</span>
         </div>
-        <TypographyH1 className="max-w-[900px] text-center lg:text-left text-4xl md:text-6xl lg:text-5xl mb-3 text-primary">
+        <h1 className="font-semibold max-w-[900px] text-center lg:text-left text-4xl md:text-6xl lg:text-5xl mb-3 text-primary">
           Technology Driven Flood Detection and Coordination
-        </TypographyH1>
+        </h1>
         <p className="text-muted-foreground text-base mb-8 max-w-[700px] lg:text-left text-justify">
           Empowering communities in Kenya with real-time alerting and advanced coordination technology to mitigate the impact of flood disasters.
         </p>
