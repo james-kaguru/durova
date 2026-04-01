@@ -3,6 +3,7 @@ import { Hero } from "./hero";
 import { Services } from "./services";
 import Faq from "./faq";
 import { Contact } from "./contact";
+import { Footer } from "./footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Services />
       <Faq />
       <Contact />
+      <Footer />
     </div>
   );
 }
