@@ -31,7 +31,7 @@ export function Services() {
     <section id="services" className="py-12 border-b bg-muted/30 border-t">
       <div className="custom-container">
         <div className="text-center mb-8">
-          <TypographyH2 className="">Our Technology</TypographyH2>
+          <TypographyH2 className="text-primary">Our Technology</TypographyH2>
           <p className="leading-7 text-muted-foreground mt-3 max-w-[600px] mx-auto">
             Comprehensive solutions designed to protect lives and property through innovative technology and coordination.
           </p>
@@ -44,7 +44,7 @@ export function Services() {
                 <Image src={service.image} width={400} height={400} alt="" className="h-[400px] w-full object-center object-cover" />
               </div>
               <div className="p-6">
-                <p className="text-lg font-semibold tracking-tight mb-3">{service.title}</p>
+                <p className="text-lg font-semibold tracking-tight mb-3 text-primary">{service.title}</p>
                 <p className="leading-7 text-justify text-muted-foreground">{service.description}</p>
               </div>
             </div>
