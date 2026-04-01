@@ -25,6 +25,12 @@ export default <CollectionConfig<"blogs">>{
   },
   fields: [
     {
+      name: "heroImage",
+      type: "upload",
+      relationTo: "media",
+      required: true,
+    },
+    {
       name: "title",
       type: "text",
       required: true,
