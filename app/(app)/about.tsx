@@ -9,7 +9,7 @@ export function About() {
     <section id="about" className="py-12 border-b bg-muted/80">
       <div className="custom-container">
         <div className="lg:flex lg:flex-row gap-12 mb-12">
-          <TypographyH2 className="lg:w-1/2 text-primary text-center uppercase lg:p-0">
+          <TypographyH2 className="lg:w-1/2 text-primary text-center lg:text-left uppercase lg:p-0">
             Born from Resilience
           </TypographyH2>
 
