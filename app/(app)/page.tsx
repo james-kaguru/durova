@@ -1,4 +1,4 @@
-import { About } from "../about/about";
+import { About } from "./about";
 import { Hero } from "./hero";
 import { Services } from "./services";
 import Faq from "./faq";
