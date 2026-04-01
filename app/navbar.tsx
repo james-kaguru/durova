@@ -1,12 +1,49 @@
 "use client";
 
+import { Menu } from "lucide-react";
 import Link from "next/link";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 
+function SmNavSheet() {
+  return (
+    <Sheet>
+      <SheetTrigger>
+        <Menu strokeWidth={1} />
+      </SheetTrigger>
+      <SheetContent side='left' >
+        <SheetHeader className="border-b">
+          <SheetTitle className='text-primary text-lg '>Durova</SheetTitle>
+          <SheetDescription className="sr-only">Durova</SheetDescription>
+        </SheetHeader>
+        <nav className="flex flex-col items-center gap-6 text-sm font-medium pt-3">
+          <SheetClose>
+            Home
+          </SheetClose>
+          <SheetClose className="transition-colors hover:text-primary">About</SheetClose>
+          <SheetClose className="transition-colors hover:text-primary">Technology</SheetClose>
+          <SheetClose className="transition-colors hover:text-primary">Blog</SheetClose>
+          <SheetClose className="transition-colors hover:text-primary">Dashboard</SheetClose>
+          <SheetClose className="transition-colors hover:text-primary">Contact</SheetClose>
+        </nav>
+      </SheetContent>
+    </Sheet>
+  );
+}
 export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="custom-container flex h-16 items-center justify-between">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
+          <SmNavSheet />
           <Link href="/" className="flex items-center space-x-2 text-primary tracking-tight font-semibold">
             <span className=" text-xl tracking-tight">Durova</span>
           </Link>
