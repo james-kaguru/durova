@@ -50,10 +50,10 @@ export default async function Page({
           <div className="custom-container">
             <Link
               href="/blogs"
-              className="text-xs text-white/70 uppercase tracking-[0.25em] hover:text-white"
+              className="text-xs text-white/70 uppercase tracking-[0.2em] hover:text-white"
               style={{ transition: "none" }}
             >
-              ← INTELLIGENCE LOGS
+              ← Blog
             </Link>
           </div>
         </div>
@@ -61,8 +61,8 @@ export default async function Page({
         {/* title block */}
         <div className="absolute bottom-0 left-0 right-0">
           <div className="custom-container pb-10 md:pb-14">
-            <p className="text-xs text-white/60 uppercase tracking-[0.3em] mb-4">
-              [Field Report] — {formattedDate}
+            <p className="text-xs text-white/60 uppercase tracking-[0.2em] mb-4">
+              {formattedDate}
             </p>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-normal text-white leading-none tracking-tight max-w-4xl">
               {blog.title}
@@ -76,28 +76,20 @@ export default async function Page({
         <div className="custom-container py-6 flex items-center justify-between flex-wrap gap-4">
           <div className="flex items-center gap-8">
             <div>
-              <p className="text-xs text-muted-foreground tracking-[0.2em] uppercase mb-1">
+              <p className="text-xs text-muted-foreground tracking-[0.15em] uppercase mb-1">
                 Published
               </p>
-              <p className="text-xs text-foreground tracking-[0.1em]">
+              <p className="text-xs text-foreground">
                 {formattedDate}
-              </p>
-            </div>
-            <div>
-              <p className="text-xs text-muted-foreground tracking-[0.2em] uppercase mb-1">
-                Status
-              </p>
-              <p className="text-xs text-primary tracking-[0.1em] uppercase">
-                {blog._status || "PUBLISHED"}
               </p>
             </div>
           </div>
           <Link
             href="/blogs"
-            className="text-xs text-muted-foreground uppercase tracking-[0.2em] hover:text-primary"
+            className="text-xs text-muted-foreground uppercase tracking-[0.15em] hover:text-primary"
             style={{ transition: "none" }}
           >
-            ← ALL REPORTS
+            ← All Posts
           </Link>
         </div>
       </div>

@@ -34,26 +34,22 @@ export default async function Page({
         <div className="custom-container">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
             <div>
-              <p className="text-xs text-muted-foreground uppercase tracking-[0.35em] mb-4">
-                [Field Reports]
+              <p className="text-xs text-muted-foreground uppercase tracking-[0.3em] mb-4">
+                Durova — Blog
               </p>
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-normal text-foreground leading-none tracking-tight">
-                INTELLIGENCE
+                Ideas &amp;
                 <br />
-                <span className="text-primary">LOGS</span>
+                <span className="text-primary">Updates</span>
               </h1>
             </div>
             <div className="md:text-right space-y-1">
-              <p className="text-xs text-muted-foreground tracking-[0.2em] uppercase">
-                {totalDocs} RECORDS FOUND
+              <p className="text-xs text-muted-foreground tracking-[0.15em] uppercase">
+                {totalDocs} {totalDocs === 1 ? "Article" : "Articles"}
               </p>
-              <p className="text-xs text-muted-foreground tracking-[0.2em] uppercase">
-                PAGE {String(currentPage).padStart(2, "0")} /{" "}
-                {String(Math.max(1, totalPages)).padStart(2, "0")}
-              </p>
-              {search && (
-                <p className="text-xs text-primary tracking-[0.1em] uppercase">
-                  QUERY: &ldquo;{search}&rdquo;
+              {totalPages > 1 && (
+                <p className="text-xs text-muted-foreground tracking-[0.15em] uppercase">
+                  Page {currentPage} of {totalPages}
                 </p>
               )}
             </div>
@@ -73,16 +69,16 @@ export default async function Page({
         <div className="custom-container">
           {blogs.length === 0 ? (
             <div className="py-32 text-center bg-card">
-              <p className="text-xs text-muted-foreground tracking-[0.3em] uppercase">
-                [No Records Found]
+              <p className="text-sm text-muted-foreground mb-2">
+                No articles found{search ? ` for "${search}"` : ""}.
               </p>
-              <p className="text-xs text-muted-foreground mt-2">
-                Refine your search query or clear the filter.
+              <p className="text-xs text-muted-foreground">
+                Try a different search term.
               </p>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {blogs.map((blog, idx) => {
+              {blogs.map((blog) => {
                 const image =
                   typeof blog.heroImage === "object"
                     ? (blog.heroImage as Media)
@@ -109,29 +105,24 @@ export default async function Page({
                           />
                         ) : (
                           <div className="w-full h-full bg-muted flex items-center justify-center">
-                            <span className="text-xs text-muted-foreground tracking-widest uppercase">
-                              [No Image]
+                            <span className="text-xs text-muted-foreground uppercase tracking-widest">
+                              Durova
                             </span>
                           </div>
                         )}
-                        {/* index badge */}
-                        <span className="absolute top-3 left-3 bg-background/90 text-xs text-muted-foreground px-2 py-1 tracking-[0.2em]">
-                          {String(
-                            idx + 1 + (currentPage - 1) * BLOGS_PER_PAGE
-                          ).padStart(3, "0")}
-                        </span>
                       </div>
 
                       {/* body */}
-                      <div className="p-6 flex flex-col flex-1 bg-card">
-                        <p className="text-xs text-muted-foreground mb-3 tracking-[0.2em] uppercase">
-                          {new Date(blog.createdAt)
-                            .toLocaleDateString("en-US", {
+                      <div className="p-6 flex flex-col flex-1">
+                        <p className="text-xs text-muted-foreground mb-3 uppercase tracking-[0.15em]">
+                          {new Date(blog.createdAt).toLocaleDateString(
+                            "en-US",
+                            {
                               year: "numeric",
-                              month: "short",
-                              day: "2-digit",
-                            })
-                            .toUpperCase()}
+                              month: "long",
+                              day: "numeric",
+                            }
+                          )}
                         </p>
                         <h2
                           className="text-sm font-normal text-foreground leading-snug mb-6 flex-1 group-hover:text-primary"
@@ -139,8 +130,8 @@ export default async function Page({
                         >
                           {blog.title}
                         </h2>
-                        <span className="text-xs text-primary uppercase tracking-[0.25em]">
-                          READ REPORT →
+                        <span className="text-xs text-primary uppercase tracking-[0.2em]">
+                          Read more →
                         </span>
                       </div>
                     </article>
@@ -153,7 +144,7 @@ export default async function Page({
           {/* ── Pagination ─────────────────────────────── */}
           {totalPages > 1 && (
             <div className="mt-16 flex items-center justify-between flex-wrap gap-4">
-              <p className="text-xs text-muted-foreground tracking-[0.2em] uppercase hidden md:block">
+              <p className="text-xs text-muted-foreground uppercase tracking-[0.15em] hidden md:block">
                 Showing {(currentPage - 1) * BLOGS_PER_PAGE + 1}–
                 {Math.min(currentPage * BLOGS_PER_PAGE, totalDocs)} of{" "}
                 {totalDocs}

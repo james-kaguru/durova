@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Navbar } from "./navbar";
+import { Footer } from "./footer";
 
 // const dmMono = DM_Mono({ subsets: ["latin"], weight: "400" });
 const spaceMono = Space_Mono({ subsets: ["latin"], weight: "400" });
@@ -26,6 +27,7 @@ export default function RootLayout({
         <TooltipProvider>
           <Navbar />
           {children}
+          <Footer />
         </TooltipProvider>
       </body>
     </html>
