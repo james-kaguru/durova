@@ -95,15 +95,16 @@ export default async function Page({
                     href={`/blogs/${blog.id}`}
                     className="group block"
                   >
-                    <article className="bg-card rounded-none overflow-hidden h-full flex flex-col">
+                    <article className="bg-card rounded-none overflow-hidden  flex flex-col">
                       {/* image */}
-                      <div className="aspect-[16/9] overflow-hidden bg-muted relative">
+                      <div className="overflow-hidden bg-muted relative">
                         {imgSrc ? (
                           <Image
                             src={imgSrc}
                             alt={image?.alt || blog.title}
-                            fill
-                            className="object-cover object-center group-hover:scale-[1.03] transition-transform duration-700"
+                            width={350}
+                            height={350}
+                            className="object-cover w-full h-[350px] object-center group-hover:scale-[1.03] transition-transform duration-700"
                           />
                         ) : (
                           <div className="w-full h-full bg-muted flex items-center justify-center">
