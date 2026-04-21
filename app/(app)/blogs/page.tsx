@@ -30,25 +30,27 @@ export default async function Page({
   return (
     <main className="bg-background min-h-screen">
       {/* ── Header ─────────────────────────────────────── */}
-      <section className="bg-muted py-16 md:py-24">
-        <div className="custom-container">
+      <section className="bg-primary text-primary-foreground">
+        <div className="custom-container py-16 lg:py-24">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
             <div>
-              <p className="text-xs text-muted-foreground uppercase tracking-[0.3em] mb-4">
-                Durova — Blog
+              <p className="text-xs uppercase tracking-widest opacity-60 mb-6">
+                [BLOG]
               </p>
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-normal text-foreground leading-none tracking-tight">
-                Ideas &amp;
-                <br />
-                <span className="text-primary">Updates</span>
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold uppercase leading-tight max-w-4xl">
+                Ideas &amp; Updates
               </h1>
+
+              <p className="mt-8 text-primary-foreground/70 max-w-2xl leading-relaxed">
+                Get the latest from Durova
+              </p>
             </div>
             <div className="md:text-right space-y-1">
-              <p className="text-xs text-muted-foreground tracking-[0.15em] uppercase">
+              <p className="text-xs text-primary-foreground/60 uppercase tracking-widest">
                 {totalDocs} {totalDocs === 1 ? "Article" : "Articles"}
               </p>
               {totalPages > 1 && (
-                <p className="text-xs text-muted-foreground tracking-[0.15em] uppercase">
+                <p className="text-xs text-primary-foreground/60 uppercase tracking-widest">
                   Page {currentPage} of {totalPages}
                 </p>
               )}

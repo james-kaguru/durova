@@ -49,7 +49,7 @@ export default function Page() {
       <section className="bg-primary text-primary-foreground">
         <div className="custom-container py-16 lg:py-24">
           <p className="text-xs uppercase tracking-widest opacity-60 mb-6">
-            [ABOUT] — Durova Systems
+            [ABOUT]
           </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold uppercase leading-tight max-w-4xl">
             Technology Built to Save Lives
