@@ -2,6 +2,7 @@ import { TypographyH1 } from "@/components/typography";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ShieldAlert } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 export function Hero() {
   return (
     <section className="custom-container flex lg:flex-row flex-col border-b gap-12 py-6 lg:py-12">
@@ -18,13 +19,14 @@ export function Hero() {
           coordination technology to mitigate the impact of flood disasters.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <Button size="lg" className="w-[200px]">
+
+          <Link href="/technology" className="min-w-[200px] px-3 uppercase flex gap-3 items-center border border-primary bg-primary h-12 text-primary-foreground">
             Explore Solution
             <ArrowRight className="ml-2 size-4" />
-          </Button>
-          <Button variant="outline" size="lg" className="w-[200px]">
+          </Link>
+          <Link href="/about" className="px-3 uppercase flex gap-3 items-center border border-primary h-12 text-primary">
             Learn More
-          </Button>
+          </Link>
         </div>
       </div>
 
@@ -39,6 +41,6 @@ export function Hero() {
           alt="water dam"
         />
       </div>
-    </section>
+    </section >
   );
 }

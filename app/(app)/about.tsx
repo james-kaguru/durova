@@ -68,12 +68,11 @@ export function About() {
         </div>
 
         <div className="flex flex-row justify-center py-6">
-          <Link href="/">
-            <Button size="lg" className="w-[200px]">
-              Learn More About Us
-              <ArrowRight className="ml-2 size-4" />
-            </Button>
+          <Link href="/technology" className="min-w-[200px] px-3 uppercase flex gap-3 items-center border border-primary bg-primary h-12 text-primary-foreground">
+            Learn More About Us
+            <ArrowRight className="ml-2 size-4" />
           </Link>
+
         </div>
       </div>
     </section>
