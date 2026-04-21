@@ -1,13 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Field, FieldLabel, FieldGroup } from "@/components/ui/field";
 import { Mail, Phone, MapPin } from "lucide-react";
-import {
-  TypographyH2,
-  TypographyP,
-  TypographyH3,
-} from "@/components/typography";
+import { ContactForm } from "./contact/ContactForm";
 
 export function Contact() {
   return (
@@ -49,34 +41,7 @@ export function Contact() {
             </div>
           </div>
 
-          <form className="space-y-6">
-            <FieldGroup>
-              <div className="grid sm:grid-cols-2 gap-4">
-                <Field>
-                  <FieldLabel>First Name</FieldLabel>
-                  <Input placeholder="James" />
-                </Field>
-                <Field>
-                  <FieldLabel>Last Name</FieldLabel>
-                  <Input placeholder="Kaguru" />
-                </Field>
-              </div>
-              <Field>
-                <FieldLabel>Email</FieldLabel>
-                <Input type="email" placeholder="james@example.com" />
-              </Field>
-              <Field>
-                <FieldLabel>Message</FieldLabel>
-                <Textarea
-                  placeholder="How can we help?"
-                  className="min-h-[120px]"
-                />
-              </Field>
-            </FieldGroup>
-            <Button size="lg" className="w-full h-10">
-              Send Message
-            </Button>
-          </form>
+          <ContactForm />
         </div>
       </div>
     </section>

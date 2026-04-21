@@ -9,6 +9,7 @@ import { Media } from "./collections/Media";
 import { defaultLexical } from "./fields/defaultLexical";
 import { s3Storage } from "@payloadcms/storage-s3";
 import Blog from "./collections/Blog";
+import { FormSubmissions } from "./collections/FormSubmissions";
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -20,7 +21,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media, Blog],
+  collections: [Users, Media, Blog, FormSubmissions],
   // editor: defaultLexical,
   secret: process.env.PAYLOAD_SECRET || "",
   typescript: {

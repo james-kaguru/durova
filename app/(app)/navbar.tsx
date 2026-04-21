@@ -37,12 +37,11 @@ function SmNavSheet() {
             </SheetClose>
           </Link>
 
-          <Link href="/technology">
+          <Link href="/#services">
             <SheetClose className="transition-colors hover:text-primary">
               Technology
             </SheetClose>
           </Link>
-
 
           <Link href="/blogs">
             <SheetClose className="transition-colors hover:text-primary">
@@ -50,8 +49,7 @@ function SmNavSheet() {
             </SheetClose>
           </Link>
 
-
-          <Link href="/contact-us">
+          <Link href="/contact">
             <SheetClose className="transition-colors hover:text-primary">
               Contact
             </SheetClose>
@@ -76,14 +74,14 @@ export function Navbar() {
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium uppercase">
-          <Link href="#about" className="transition-colors hover:text-primary">
+          <Link href="/" className="transition-colors hover:text-primary">
             Home
           </Link>
           <Link href="/about" className="transition-colors hover:text-primary">
             About
           </Link>
           <Link
-            href="#services"
+            href="/#services"
             className="transition-colors hover:text-primary"
           >
             Technology
@@ -95,7 +93,7 @@ export function Navbar() {
             Blogs
           </Link>
           <Link
-            href="#contact"
+            href="/contact"
             className="transition-colors hover:text-primary"
           >
             Contact
