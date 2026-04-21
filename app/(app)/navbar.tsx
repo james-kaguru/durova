@@ -2,12 +2,12 @@
 
 import { Menu } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Sheet,
   SheetClose,
   SheetContent,
   SheetDescription,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -58,6 +58,7 @@ export function Navbar() {
             href="/"
             className="flex items-center space-x-2 text-primary tracking-tight font-semibold"
           >
+            <Image unoptimized={true} src={"https://durova.s3.eu-central-1.amazonaws.com/web-assets/durova.png"} alt="Durova Logo" width={40} height={40} />
             <span className=" text-2xl tracking-tight uppercase">Durova</span>
           </Link>
         </div>

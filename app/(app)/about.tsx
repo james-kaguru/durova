@@ -29,19 +29,19 @@ export function About() {
               name: "James Kaguru",
               role: "Co-Founder",
               image:
-                "https://durova.s3.eu-central-1.amazonaws.com/web-assets/dam.jpg",
+                "https://durova.s3.eu-central-1.amazonaws.com/web-assets/james_kaguru_2.JPG",
             },
             {
               name: "Kevin Tuei",
               role: "Co-Founder",
               image:
-                "https://durova.s3.eu-central-1.amazonaws.com/web-assets/dam.jpg",
+                "https://durova.s3.eu-central-1.amazonaws.com/web-assets/kevin_tuei.jpeg",
             },
             {
               name: "Patrick Nyangoto",
               role: "Co-Founder",
               image:
-                "https://durova.s3.eu-central-1.amazonaws.com/web-assets/dam.jpg",
+                "https://durova.s3.eu-central-1.amazonaws.com/web-assets/patrick_orangi.jpeg",
             },
           ].map((member) => (
             <div
@@ -54,7 +54,7 @@ export function About() {
                   width={350}
                   height={350}
                   alt={member.name}
-                  className="obect-cover object-center w-full h-full"
+                  className="object-cover object-center w-full h-full"
                 />
               </div>
               <div className="p-6">
