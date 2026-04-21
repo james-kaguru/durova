@@ -21,7 +21,7 @@ export function BlogSearchForm({ defaultValue }: { defaultValue?: string }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex items-end gap-3 max-w-2xl">
+    <form onSubmit={handleSubmit} className="flex flex-col lg:flex-row lg:items-end gap-3 lg:max-w-2xl">
       <div className="flex-1">
         <label className="block text-xs text-muted-foreground mb-3 tracking-[0.15em] uppercase">
           Search articles
