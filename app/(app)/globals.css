@@ -135,6 +135,75 @@
   }
 }
 
+.payload-richtext {
+  @apply text-base leading-7 text-foreground;
+}
+
 .payload-richtext h1 {
-  @apply font-semibold text-2xl my-2;
+  @apply text-3xl font-bold leading-tight mt-10 mb-4 text-foreground;
+}
+
+.payload-richtext h2 {
+  @apply text-2xl font-semibold leading-snug mt-8 mb-3 text-foreground;
+}
+
+.payload-richtext h3 {
+  @apply text-xl font-semibold leading-snug mt-6 mb-2 text-foreground;
+}
+
+.payload-richtext h4 {
+  @apply text-base font-semibold uppercase tracking-widest mt-6 mb-2 text-muted-foreground;
+}
+
+.payload-richtext p {
+  @apply my-4 leading-7;
+}
+
+.payload-richtext ul {
+  @apply my-4 ml-6 list-disc space-y-1;
+}
+
+.payload-richtext ol {
+  @apply my-4 ml-6 list-decimal space-y-1;
+}
+
+.payload-richtext li {
+  @apply leading-7;
+}
+
+.payload-richtext li > ul,
+.payload-richtext li > ol {
+  @apply mt-1 mb-0;
+}
+
+.payload-richtext blockquote {
+  @apply my-6 pl-4 border-l-2 border-primary text-muted-foreground italic;
+}
+
+.payload-richtext hr {
+  @apply my-8 border-t border-border;
+}
+
+.payload-richtext a {
+  @apply text-primary underline underline-offset-4 decoration-primary/40 hover:decoration-primary transition-colors;
+}
+
+.payload-richtext strong {
+  @apply font-bold text-foreground;
+}
+
+.payload-richtext em {
+  @apply italic;
+}
+
+.payload-richtext code {
+  @apply text-sm bg-muted text-foreground px-1.5 py-0.5 rounded-none font-mono;
+}
+
+.payload-richtext pre {
+  @apply my-6 p-4 bg-muted overflow-x-auto rounded-none;
+}
+
+.payload-richtext pre code {
+  @apply bg-transparent p-0 text-sm;
 }
