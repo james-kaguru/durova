@@ -53,7 +53,7 @@ export default async function Page({
               className="text-xs text-white/70 uppercase tracking-[0.2em] hover:text-white"
               style={{ transition: "none" }}
             >
-              ← Blog
+              ← Blogs
             </Link>
           </div>
         </div>
@@ -64,7 +64,7 @@ export default async function Page({
             <p className="text-xs text-white/60 uppercase tracking-[0.2em] mb-4">
               {formattedDate}
             </p>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-normal text-white leading-none tracking-tight max-w-4xl">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-normal text-white leading-none tracking-tight max-w-4xl uppercase">
               {blog.title}
             </h1>
           </div>
@@ -89,7 +89,7 @@ export default async function Page({
             className="text-xs text-muted-foreground uppercase tracking-[0.15em] hover:text-primary"
             style={{ transition: "none" }}
           >
-            ← All Posts
+            ← All Blogs
           </Link>
         </div>
       </div>
