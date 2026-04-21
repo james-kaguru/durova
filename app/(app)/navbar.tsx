@@ -29,7 +29,9 @@ function SmNavSheet() {
         <nav className="flex flex-col items-center gap-6 text-sm font-medium pt-3 uppercase">
           <SheetClose>Home</SheetClose>
           <SheetClose className="transition-colors hover:text-primary">
-            About
+            <Link href="/about">
+              About
+            </Link>
           </SheetClose>
           <SheetClose className="transition-colors hover:text-primary">
             Technology
@@ -66,7 +68,7 @@ export function Navbar() {
           <Link href="#about" className="transition-colors hover:text-primary">
             Home
           </Link>
-          <Link href="#about" className="transition-colors hover:text-primary">
+          <Link href="/about" className="transition-colors hover:text-primary">
             About
           </Link>
           <Link
