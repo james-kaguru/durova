@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { DM_Mono, DM_Sans, Space_Mono } from "next/font/google";
+import { Space_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Navbar } from "./navbar";
 import { Footer } from "./footer";
 
-// const dmMono = DM_Mono({ subsets: ["latin"], weight: "400" });
 const spaceMono = Space_Mono({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Durova",
+  description: "We are in the mission to save human lives from the risk of floods by providing a platform that helps in the detection ,alerting and coordination of disaster response efforts"
 };
 
 export default function RootLayout({
