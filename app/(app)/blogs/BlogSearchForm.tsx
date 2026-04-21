@@ -21,7 +21,7 @@ export function BlogSearchForm({ defaultValue }: { defaultValue?: string }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex items-end gap-6 max-w-2xl">
+    <form onSubmit={handleSubmit} className="flex items-end gap-3 max-w-2xl">
       <div className="flex-1">
         <label className="block text-xs text-muted-foreground mb-3 tracking-[0.15em] uppercase">
           Search articles
@@ -45,7 +45,7 @@ export function BlogSearchForm({ defaultValue }: { defaultValue?: string }) {
         <button
           type="button"
           onClick={handleClear}
-          className="text-xs text-muted-foreground uppercase tracking-[0.2em] hover:text-foreground pb-2.5 border-b-2 border-transparent"
+          className="text-xs text-muted-foreground uppercase tracking-[0.2em] hover:text-foreground h-9  px-5  border border-primary text-primary"
           style={{ transition: "none" }}
         >
           CLEAR ×

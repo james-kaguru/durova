@@ -27,26 +27,35 @@ function SmNavSheet() {
           <SheetDescription className="sr-only">Durova</SheetDescription>
         </SheetHeader>
         <nav className="flex flex-col items-center gap-6 text-sm font-medium pt-3 uppercase">
-          <SheetClose>Home</SheetClose>
-          <SheetClose className="transition-colors hover:text-primary">
-            <Link href="/about">
+          <Link href="/">
+            <SheetClose>Home</SheetClose>
+          </Link>
+
+          <Link href="/about">
+            <SheetClose className="transition-colors hover:text-primary">
               About
-            </Link>
-          </SheetClose>
-          <SheetClose className="transition-colors hover:text-primary">
-            Technology
-          </SheetClose>
-          <SheetClose className="transition-colors hover:text-primary">
-            <Link href="/bogs">
+            </SheetClose>
+          </Link>
+
+          <Link href="/technology">
+            <SheetClose className="transition-colors hover:text-primary">
+              Technology
+            </SheetClose>
+          </Link>
+
+
+          <Link href="/blogs">
+            <SheetClose className="transition-colors hover:text-primary">
               Blogs
-            </Link>
-          </SheetClose>
-          <SheetClose className="transition-colors hover:text-primary">
-            Dashboard
-          </SheetClose>
-          <SheetClose className="transition-colors hover:text-primary">
-            Contact
-          </SheetClose>
+            </SheetClose>
+          </Link>
+
+
+          <Link href="/contact-us">
+            <SheetClose className="transition-colors hover:text-primary">
+              Contact
+            </SheetClose>
+          </Link>
         </nav>
       </SheetContent>
     </Sheet>
@@ -84,12 +93,6 @@ export function Navbar() {
             className="transition-colors hover:text-primary"
           >
             Blogs
-          </Link>
-          <Link
-            href="#services"
-            className="transition-colors hover:text-primary"
-          >
-            Dashboard
           </Link>
           <Link
             href="#contact"

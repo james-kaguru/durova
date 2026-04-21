@@ -127,7 +127,7 @@ export default async function Page({
                           )}
                         </p>
                         <h2
-                          className="text-sm font-normal text-foreground leading-snug mb-6 flex-1 group-hover:text-primary"
+                          className="text-sm font-normal text-foreground leading-snug mb-6 flex-1 group-hover:text-primary uppercase"
                           style={{ transition: "none" }}
                         >
                           {blog.title}

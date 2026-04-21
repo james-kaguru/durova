@@ -4,17 +4,17 @@ const values = [
   {
     id: "01",
     label: "Human Life First",
-    body: "Every decision — product, partnership, or policy — is measured against one question: does this save lives?",
+    body: "Every decision  product, partnership, or policy is measured against one question: does this save lives?",
   },
   {
     id: "02",
     label: "Community Driven",
-    body: "The people closest to the flood line know things no sensor can detect. We build with communities, not for them — because local knowledge, local trust, and local action are what turn an alert into a life saved.",
+    body: "The people closest to the flood line know things no sensor can detect. We build with communities, not for them because local knowledge, local trust, and local action are what turn an alert into a life saved.",
   },
   {
     id: "03",
     label: "Continuous Preparedness",
-    body: "Floods don't wait for us to be ready. We build cultures of anticipation — not just responding when disaster strikes, but investing relentlessly in readiness before the rain begins.",
+    body: "Floods don't wait for us to be ready. We build cultures of anticipation not just responding when disaster strikes, but investing relentlessly in readiness before the rain begins.",
   },
 ];
 
@@ -77,9 +77,7 @@ export default function Page() {
                 Mission
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                We are on a mission to save human lives from the risk of floods
-                by providing a platform that helps in the detection, alerting, and
-                coordination of disaster response efforts.
+                We are in the mission to save human lives from the risk of floods by providing a platform that helps in the detection ,alerting and coordination of disaster response efforts.
               </p>
             </div>
 
@@ -92,8 +90,7 @@ export default function Page() {
                 Vision
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                A world where no life is lost to a flood that could have been
-                predicted.
+                A world where no life is lost to a flood that could have been predicted.
               </p>
             </div>
           </div>
@@ -143,7 +140,7 @@ export default function Page() {
                 [BACKGROUND]
               </p>
               <p className="text-xs text-muted-foreground uppercase tracking-widest">
-                Est. 2024 → 2026
+                Est. 2026
               </p>
             </div>
 
@@ -233,18 +230,6 @@ export default function Page() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ── CLOSING STATEMENT ────────────────────────────────────────── */}
-      <section className="bg-primary text-primary-foreground">
-        <div className="custom-container py-16 lg:py-20 flex flex-col lg:flex-row items-start lg:items-end justify-between gap-8">
-          <p className="text-3xl lg:text-4xl font-semibold uppercase max-w-xl leading-tight">
-            No one should die from a flood that could have been predicted.
-          </p>
-          <p className="text-xs text-primary-foreground/60 uppercase tracking-widest lg:text-right">
-            [DUROVA]<br />Est. 2024<br />Nairobi, Kenya
-          </p>
         </div>
       </section>
     </main>
