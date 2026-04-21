@@ -29,7 +29,7 @@ export function Contact() {
                 <Mail className="size-5 text-primary" />
                 <div>
                   <p className=" font-medium">Email</p>
-                  <p className=" text-muted-foreground">info@durova.ai</p>
+                  <p className=" text-muted-foreground">info@durova.tech</p>
                 </div>
               </div>
               <div className="flex items-center gap-4 p-4 border bg-background">
