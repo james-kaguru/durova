@@ -37,7 +37,9 @@ function SmNavSheet() {
             Technology
           </SheetClose>
           <SheetClose className="transition-colors hover:text-primary">
-            Blog
+            <Link href="/bogs">
+              Blogs
+            </Link>
           </SheetClose>
           <SheetClose className="transition-colors hover:text-primary">
             Dashboard
@@ -78,10 +80,10 @@ export function Navbar() {
             Technology
           </Link>
           <Link
-            href="#services"
+            href="/blogs"
             className="transition-colors hover:text-primary"
           >
-            Blog
+            Blogs
           </Link>
           <Link
             href="#services"
