@@ -43,11 +43,11 @@ function SmNavSheet() {
             </SheetClose>
           </Link>
 
-          <Link href="/blogs">
+          {/*<Link href="/blogs">
             <SheetClose className="transition-colors hover:text-primary">
               Blogs
             </SheetClose>
-          </Link>
+          </Link>*/}
 
           <Link href="/contact">
             <SheetClose className="transition-colors hover:text-primary">
@@ -69,7 +69,7 @@ export function Navbar() {
             href="/"
             className="flex items-center space-x-2 text-primary tracking-tight font-semibold"
           >
-            <Image unoptimized={true} src={"https://durova.s3.eu-central-1.amazonaws.com/web-assets/durova.png"} alt="Durova Logo" width={40} height={40} />
+            {/*<Image unoptimized={true} src={"https://durova.s3.eu-central-1.amazonaws.com/web-assets/durova.png"} alt="Durova Logo" width={40} height={40} />*/}
             <span className=" text-2xl tracking-tight uppercase">Durova</span>
           </Link>
         </div>
@@ -86,12 +86,12 @@ export function Navbar() {
           >
             Technology
           </Link>
-          <Link
+          {/*<Link
             href="/blogs"
             className="transition-colors hover:text-primary"
           >
             Blogs
-          </Link>
+          </Link>*/}
           <Link
             href="/contact"
             className="transition-colors hover:text-primary"

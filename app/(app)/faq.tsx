@@ -19,11 +19,6 @@ export default function Faq() {
         "Our system is designed for both individuals and organizations. Residents can sign up for SMS and app-based alerts, while government agencies and NGOs use our coordination dashboard for broader disaster management.",
     },
     {
-      question: "Is the technology available throughout Kenya?",
-      answer:
-        "We are currently scaling our operations, starting with the regions most affected by recent floods. Our goal is to achieve national coverage by the end of 2026.",
-    },
-    {
       question: "How can community leaders get involved?",
       answer:
         "Community leaders can partner with us to become 'Durova Hubs'. We provide training and specialized access to our coordination tools to help local leaders manage evacuations and resource distribution effectively.",
